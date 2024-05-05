@@ -1,0 +1,15 @@
+a {
+    color: red;
+}
+
+#a {
+    color: blue;
+}
+
+.b {
+    color: blue;
+}
+
+body {
+    text-align: center;
+}
