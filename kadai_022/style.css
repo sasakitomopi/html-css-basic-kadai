@@ -1,0 +1,87 @@
+h1 , p , body{
+    margin: 0;
+}
+
+p, a {
+    font-size: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+.title {
+    color: rgb(255, 255, 255)
+}
+
+main {
+    margin: 0 10px;
+}
+
+#parent {
+    display: flex;
+    justify-content: space-between; /* 要素を均等な間隔で配置 */
+    text-align: center;
+}
+
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 15px 10px;
+    margin: 0 20px;
+}
+
+.h2 {
+    font-size: 25px;
+    border: 3px dotted rgb(236, 122, 122);
+}
+
+.h2::before {
+    content: "⚫️";
+    color: rgb(239, 111, 139);
+}
+
+.contents p:nth-of-type(2)::first-letter {
+    font-weight: bold; /* 太字 */
+    color: rgb(97, 206, 249); /* 文字色はrgb(97, 206, 249) */
+}
+
+.contents img {
+    margin: 0 10px;
+    width: 70%;
+}
+
+footer {
+    background-color:rgb(244, 79, 79);
+    text-align: center;
+}
+
+.a {
+    color:rgb(255, 255, 255);
+}
+
+/* .a:visited {
+    color: rgb(193, 234, 251);
+} */
+
+.a:hover {
+    color: rgb(245, 178, 168);
+}
+
+@media (max-width: 768px) {
+    h2 {
+      font-size: 30px; /* h2のフォントサイズを30pxに設定 */
+    }
+  
+    p {
+      font-size: 25px; /* pのフォントサイズを25pxに設定 */
+    }
+  
+    #parent {
+      display: flex; /* Flexboxコンテナであるid名parent内の要素が縦に並ぶようにする */
+      flex-direction: column; /* 縦に並ぶようにflex-directionをcolumnに設定 */
+    }
+  }
+  
